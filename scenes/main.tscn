@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://dvjvt06eyqg50"]
+
+[ext_resource type="Script" uid="uid://cffmo1t2ycrd4" path="res://scripts/Main.cs" id="1_sugp2"]
+[ext_resource type="Texture2D" uid="uid://djca20lgmvjib" path="res://assets/bg-1.png" id="2_jyhfs"]
+
+[node name="Main" type="Node2D" unique_id=274366841]
+script = ExtResource("1_sugp2")
+
+[node name="Control" type="Control" parent="." unique_id=1238588746]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(31.963121, 18.025753)
+
+[node name="TextureRect" type="TextureRect" parent="Control" unique_id=783932123]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_jyhfs")
+expand_mode = 2
