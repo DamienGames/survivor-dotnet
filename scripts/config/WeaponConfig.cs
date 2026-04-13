@@ -20,11 +20,13 @@ public partial class WeaponConfig : Resource
     [Export] public AttackPattern Pattern;
     [Export] public AttackShape Shape;
 
-    [ExportGroup("Visual / Prefab")]
+    [ExportGroup("Visual")]
+    [Export] public Texture2D DisplayIcon;
     [Export] public PackedScene ProjectileScene;
 
     [ExportGroup("Effects")]
     [Export] public Array<Effect> Effects;
+
     #endregion
 
     #region Enums
@@ -39,6 +41,7 @@ public partial class WeaponConfig : Resource
     }
     public enum AttackPattern
     {
+        Hit,            // linha (melee)
         Arc,            // arco (melee)
         Projectile,     // tiro linha
         Beam,           // laser linha

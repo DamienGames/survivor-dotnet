@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Apps\\Projetos\\CSharp\\SurvivorDotnet\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FEAB44FA-4067-44A3-A17F-6E7CE1180F5A}|SurvivorDotnet.csproj|c:\\apps\\projetos\\csharp\\survivordotnet\\scripts\\config\\weaponconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FEAB44FA-4067-44A3-A17F-6E7CE1180F5A}|SurvivorDotnet.csproj|solutionrelative:scripts\\config\\weaponconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FEAB44FA-4067-44A3-A17F-6E7CE1180F5A}|SurvivorDotnet.csproj|c:\\apps\\projetos\\csharp\\survivordotnet\\scripts\\components\\healthcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEAB44FA-4067-44A3-A17F-6E7CE1180F5A}|SurvivorDotnet.csproj|solutionrelative:scripts\\components\\healthcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FEAB44FA-4067-44A3-A17F-6E7CE1180F5A}|SurvivorDotnet.csproj|c:\\apps\\projetos\\csharp\\survivordotnet\\scripts\\components\\weaponcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FEAB44FA-4067-44A3-A17F-6E7CE1180F5A}|SurvivorDotnet.csproj|solutionrelative:scripts\\components\\weaponcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEAB44FA-4067-44A3-A17F-6E7CE1180F5A}|SurvivorDotnet.csproj|c:\\apps\\projetos\\csharp\\survivordotnet\\scripts\\config\\weaponconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEAB44FA-4067-44A3-A17F-6E7CE1180F5A}|SurvivorDotnet.csproj|solutionrelative:scripts\\config\\weaponconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEAB44FA-4067-44A3-A17F-6E7CE1180F5A}|SurvivorDotnet.csproj|c:\\apps\\projetos\\csharp\\survivordotnet\\scripts\\config\\effectconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEAB44FA-4067-44A3-A17F-6E7CE1180F5A}|SurvivorDotnet.csproj|solutionrelative:scripts\\config\\effectconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,12 +31,38 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "HealthComponent.cs",
+              "DocumentMoniker": "C:\\Apps\\Projetos\\CSharp\\SurvivorDotnet\\scripts\\components\\HealthComponent.cs",
+              "RelativeDocumentMoniker": "scripts\\components\\HealthComponent.cs",
+              "ToolTip": "C:\\Apps\\Projetos\\CSharp\\SurvivorDotnet\\scripts\\components\\HealthComponent.cs",
+              "RelativeToolTip": "scripts\\components\\HealthComponent.cs",
+              "ViewState": "AQIAADEAAAAAAAAAAAA9wDwAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-13T02:00:15.178Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EffectConfig.cs",
+              "DocumentMoniker": "C:\\Apps\\Projetos\\CSharp\\SurvivorDotnet\\scripts\\config\\EffectConfig.cs",
+              "RelativeDocumentMoniker": "scripts\\config\\EffectConfig.cs",
+              "ToolTip": "C:\\Apps\\Projetos\\CSharp\\SurvivorDotnet\\scripts\\config\\EffectConfig.cs",
+              "RelativeToolTip": "scripts\\config\\EffectConfig.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAxwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-13T01:59:54.391Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "WeaponConfig.cs",
               "DocumentMoniker": "C:\\Apps\\Projetos\\CSharp\\SurvivorDotnet\\scripts\\config\\WeaponConfig.cs",
               "RelativeDocumentMoniker": "scripts\\config\\WeaponConfig.cs",
               "ToolTip": "C:\\Apps\\Projetos\\CSharp\\SurvivorDotnet\\scripts\\config\\WeaponConfig.cs",
               "RelativeToolTip": "scripts\\config\\WeaponConfig.cs",
-              "ViewState": "AQIAADcAAAAAAAAAAAAAAEAAAAAFAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEAAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-13T01:44:54.175Z",
               "EditorCaption": ""

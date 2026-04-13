@@ -6,7 +6,7 @@ public partial class HealthComponent : Node
     #region Signals
     [Signal] public delegate void DiedEventHandler();
     [Signal] public delegate void HealthChangedEventHandler(float currentHealth);
-    [Signal] public delegate void FullHealEventHandler(float currentHealth);
+    [Signal] public delegate void HealthFullEventHandler(float currentHealth);
     #endregion
 
     #region Exports
@@ -58,13 +58,7 @@ public partial class HealthComponent : Node
     {
         if (_currentHealth != maxHealth)
             _currentHealth = maxHealth;
-        EmitSignal(SignalName.FullHeal, _currentHealth);
+        EmitSignal(SignalName.HealthFull, _currentHealth);
     }
     #endregion
-
-
-
-
-
-
 }

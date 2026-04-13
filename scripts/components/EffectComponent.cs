@@ -3,13 +3,12 @@ using System;
 
 public partial class EffectComponent : Node
 {
-	// Called when the node enters the scene tree for the first time.
-	public override void _Ready()
-	{
-	}
+    public abstract partial class Effect : Resource
+    {
+        [Export] public int Priority = 0;
+        [Export] public float Chance = 1.0f;
+        [Export] public float Duration = 1.0f;
 
-	// Called every frame. 'delta' is the elapsed time since the previous frame.
-	public override void _Process(double delta)
-	{
-	}
+        public abstract void Apply(Node target);
+    }
 }

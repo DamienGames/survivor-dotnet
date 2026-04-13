@@ -6,7 +6,7 @@ public partial class XPComponent : Node
     #region Signals
 
     [Signal] public delegate void XpChangedEventHandler(int current, int required);
-    [Signal] public delegate void LevelUpEventHandler(int newLevel);
+    [Signal] public delegate void LeveledEventHandler(int newLevel);
     #endregion
 
     #region Exports
@@ -48,7 +48,7 @@ public partial class XPComponent : Node
     private void LevelUp()
     {
         Level++;
-        EmitSignal(SignalName.LevelUp, Level);
+        EmitSignal(SignalName.Leveled, Level);
     }
 
     private int CalculateRequiredXp(int level)

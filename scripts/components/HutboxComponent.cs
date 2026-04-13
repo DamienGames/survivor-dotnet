@@ -38,12 +38,20 @@ public partial class HurtboxComponent : Area2D
     {
         if (area is HitboxComponent hitbox)
         {
+            var owner = hitbox.GetParent();
+            if (!owner.IsInGroup("enemy"))
+                return;          
+
             if (_is_invincible)
+            {
                 EmitSignal(SignalName.Blocked, area);
+                return;
+            }
 
             _health.TakeDamage(hitbox.Damage);
         }
     }
+
     public void ShowDamageNumber(float damage)
     {
         var numberScene = DamageNumberScene.Instantiate<Node2D>();
