@@ -5,7 +5,7 @@ using Godot;
 using static System.Net.Mime.MediaTypeNames;
 using static HitboxComponent;
 
-public partial class HurtboxComponent : Area2D
+public partial class HurtboxComponent : Area2D, IDamageable
 {
     #region Signals
 
@@ -24,6 +24,8 @@ public partial class HurtboxComponent : Area2D
 
     private bool _is_invincible;
     private HealthComponent _health;
+    private HitboxComponent _hitbox;
+
     #endregion
 
     #region Métodos
@@ -31,25 +33,24 @@ public partial class HurtboxComponent : Area2D
     public override void _Ready()
     {
         _health = GetParent().GetNode<HealthComponent>("HealthComponent");
+        _hitbox = GetParent().GetNodeOrNull<HitboxComponent>("HitboxComponent");
+        if (_hitbox != null)
+            _hitbox.HitDetected += OnHitDetected;
         AreaEntered += OnAreaEntered;
     }
 
     private void OnAreaEntered(Area2D area)
     {
-        if (area is HitboxComponent hitbox)
+        if (area is not HitboxComponent hitbox)
+            return;
+
+        if (_is_invincible)
         {
-            var owner = hitbox.GetParent();
-            if (!owner.IsInGroup("enemy"))
-                return;          
-
-            if (_is_invincible)
-            {
-                EmitSignal(SignalName.Blocked, area);
-                return;
-            }
-
-            _health.TakeDamage(hitbox.Damage);
+            EmitSignal(SignalName.Blocked, area);
+            return;
         }
+
+        EmitSignal(SignalName.Hurt, hitbox); // ou DamageContext se vier do hitbox
     }
 
     public void ShowDamageNumber(float damage)
@@ -81,6 +82,21 @@ public partial class HurtboxComponent : Area2D
     public bool CanBeHit()
     {
         return !_is_invincible && _health != null && !_health.Dead;
+    }
+
+    public void TakeDamage(DamageContext damageContext)
+    {
+        _health.TakeDamage(damageContext);
+        ShowDamageNumber(damageContext.FinalAmount);
+        EmitSignal(SignalName.Hurt, damageContext.Source);
+    }
+
+    private void OnHitDetected(DamageContext damageContext)
+    {
+        if (!CanBeHit())
+            return;
+
+        TakeDamage(damageContext);
     }
     #endregion
 }

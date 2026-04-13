@@ -2,42 +2,43 @@ using Godot;
 
 public partial class WeaponComponent : Node
 {
-    #region Signals
+	#region Signals
 
-    [Signal] public delegate void HasShootEventHandler(Node2D other);
-    #endregion
+	[Signal] public delegate void HasShootEventHandler(Node2D other);
+	#endregion
 
-    #region Exports
+	#region Exports
 
-    [Export] private WeaponConfig config;
-    #endregion
+	[Export] private WeaponConfig config;
+	[Export] public ProjectileConfig ProjectileConfig;
+	#endregion
 
-    #region Properties
+	#region Properties
 
-    private float _timer;
-    #endregion
+	private float _timer;
+	#endregion
 
-    #region Métodos
-    public override void _Process(double delta)
-    {
-        _timer -= (float)delta;
+	#region Métodos
+	public override void _Process(double delta)
+	{
+		_timer -= (float)delta;
 
-        if (_timer <= 0)
-        {
-            Shoot();
-            _timer = config.Cooldown;
-        }
-    }
+		if (_timer <= 0)
+		{
+			Shoot();
+			_timer = config.Cooldown;
+		}
+	}
 
-    private void Shoot()
-    {
-        var instance = config.ProjectileScene.Instantiate<Node2D>();
+	private void Shoot()
+	{
+		var instance = config.ProjectileScene.Instantiate<Node2D>();
 
-        GetTree().CurrentScene.AddChild(instance);
-        instance.GlobalPosition = GetParent<Node2D>().GlobalPosition;
+		GetTree().CurrentScene.AddChild(instance);
+		instance.GlobalPosition = GetParent<Node2D>().GlobalPosition;
 
-        if (instance is ProjectileComponent projectile)
-            projectile.SetDamage(config.Damage);
-    }
-    #endregion
+		if (instance is ProjectileComponent projectile)
+			projectile.Init(ProjectileConfig, instance);
+	}
+	#endregion
 }

@@ -1,14 +1,30 @@
 using Godot;
-using System;
+using System.Collections.Generic;
 
 public partial class EffectComponent : Node
 {
-    public abstract partial class Effect : Resource
-    {
-        [Export] public int Priority = 0;
-        [Export] public float Chance = 1.0f;
-        [Export] public float Duration = 1.0f;
+    private List<EffectInstance> _effects = new();
 
-        public abstract void Apply(Node target);
+    public void ApplyEffect(EffectConfig config, Node target)
+    {
+        if (GD.Randf() > config.Chance)
+            return;
+
+        var instance = config.CreateInstance();
+        instance.Init(target, config.Duration);
+
+        _effects.Add(instance);
+    }
+
+    public override void _Process(double delta)
+    {
+        for (int i = _effects.Count - 1; i >= 0; i--)
+        {
+            var effect = _effects[i];
+            effect.Update(delta);
+
+            // simples: remove quando acabar
+            // (você pode melhorar isso depois)
+        }
     }
 }

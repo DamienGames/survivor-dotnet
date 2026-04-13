@@ -1,30 +1,66 @@
-using System;
 using Godot;
 
 public partial class ProjectileComponent : Area2D
 {
+    #region Signals
+
+    #endregion
+
+    #region Exports
+
+    #endregion
+
     #region Properties
 
-    private float _damage;
+    private ProjectileConfig _config;
     private Vector2 _direction = Vector2.Right;
-    private float _speed = 300f;
+    private Node _source;
+    private float _lifeTimer;
     #endregion
 
     #region Métodos
- 
+
+    public void Init(ProjectileConfig config, Node source)
+    {
+        _config = config;
+        _source = source;
+        _lifeTimer = config.Lifetime;
+    }
+
+    public void SetDirection(Vector2 dir)
+    {
+        _direction = dir.Normalized();
+    }
+
     public override void _PhysicsProcess(double delta)
     {
-        Position += _direction * _speed * (float)delta;
+        Translate(_direction * _config.Speed * (float)delta);
+
+        _lifeTimer -= (float)delta;
+        if (_lifeTimer <= 0)
+            QueueFree();
     }
 
-    public void SetDamage(float damage)
+    private void OnBodyEntered(Node body)
     {
-        _damage = damage;
-    }
+        if (body is not HurtboxComponent hurtbox || !hurtbox.CanBeHit())
+            return;
 
-    public float GetDamage()
-    {
-        return _damage;
+        var damageContext = new DamageContext(_config.Damage)
+        {
+            Source = _source,
+            Target = hurtbox,
+            Direction = _direction,
+            KnockbackForce = _config.KnockbackForce,
+            PullForce = 0
+        };
+
+        hurtbox.TakeDamage(damageContext);
+
+        if (!_config.Pierce)
+            QueueFree();
     }
     #endregion
+
+
 }

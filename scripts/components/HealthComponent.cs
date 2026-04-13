@@ -1,5 +1,6 @@
-using System.Reflection.Emit;
 using Godot;
+using System.Reflection.Emit;
+using static System.Net.Mime.MediaTypeNames;
 
 public partial class HealthComponent : Node
 {
@@ -29,13 +30,13 @@ public partial class HealthComponent : Node
         _stats = GetParent().GetNode<StatsComponent>("StatsComponent");
     }
 
-    public void TakeDamage(float rawDamage)
+    public void TakeDamage(DamageContext damage)
     {
         if (_currentHealth <= 0)
             return;
 
-        float defense = _stats?.Defense ?? 0;
-        float finalDamage = Mathf.Max(rawDamage - defense, 1);
+        float defense = _stats?.GetStat(StatsComponent.StatType.Defense) ?? 0;
+        float finalDamage = Mathf.Max(damage.FinalAmount - defense, 1);
 
         _currentHealth -= finalDamage;
         EmitSignal(SignalName.HealthChanged, _currentHealth);
