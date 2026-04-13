@@ -1,20 +1,30 @@
+using System;
 using Godot;
 
-public partial class ProjectileComponent: Area2D
+public partial class ProjectileComponent : Area2D
 {
-    private int _damage;
+    #region Properties
+
+    private float _damage;
     private Vector2 _direction = Vector2.Right;
     private float _speed = 300f;
+    #endregion
 
-    public void SetDamage(int damage)
-    {
-        _damage = damage;
-    }
-
+    #region Métodos
+ 
     public override void _PhysicsProcess(double delta)
     {
         Position += _direction * _speed * (float)delta;
     }
 
-    public int GetDamage() => _damage;
+    public void SetDamage(float damage)
+    {
+        _damage = damage;
+    }
+
+    public float GetDamage()
+    {
+        return _damage;
+    }
+    #endregion
 }

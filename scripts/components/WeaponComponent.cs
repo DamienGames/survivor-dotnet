@@ -2,10 +2,22 @@ using Godot;
 
 public partial class WeaponComponent : Node
 {
+    #region Signals
+
+    [Signal] public delegate void HasShootEventHandler(Node2D other);
+    #endregion
+
+    #region Exports
+
     [Export] private WeaponConfig config;
+    #endregion
+
+    #region Properties
 
     private float _timer;
+    #endregion
 
+    #region Métodos
     public override void _Process(double delta)
     {
         _timer -= (float)delta;
@@ -19,12 +31,13 @@ public partial class WeaponComponent : Node
 
     private void Shoot()
     {
-        var projectile = config.ProjectileScene.Instantiate<Node2D>();
-        GetTree().CurrentScene.AddChild(projectile);
+        var instance = config.ProjectileScene.Instantiate<Node2D>();
 
-        projectile.GlobalPosition = GetParent<Node2D>().GlobalPosition;
+        GetTree().CurrentScene.AddChild(instance);
+        instance.GlobalPosition = GetParent<Node2D>().GlobalPosition;
 
-        if (projectile is Projectile p)
-            p.SetDamage(config.Damage);
+        if (instance is ProjectileComponent projectile)
+            projectile.SetDamage(config.Damage);
     }
+    #endregion
 }

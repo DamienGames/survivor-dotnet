@@ -1,3 +1,39 @@
 # Godot 4+ specific ignores
 .godot/
 /android/
+
+# =========================
+# Visual Studio
+# =========================
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# =========================
+# Build / C#
+# =========================
+bin/
+obj/
+*.dll
+*.exe
+
+# =========================
+# Godot
+# =========================
+.godot/
+.import/
+export.cfg
+export_presets.cfg
+
+# =========================
+# OS
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Logs
+# =========================
+*.log
