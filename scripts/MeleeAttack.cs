@@ -29,7 +29,7 @@ public partial class MeleeAttack : Node
             if (collider is not HurtboxComponent hurtbox || !hurtbox.CanBeHit())
                 continue;
 
-            var damageContext = new DamageContext(weapon.Damage)
+            var damageContext = new DamageRuntime(weapon.Damage)
             {
                 Source = Owner,
                 Target = hurtbox,

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="WeaponConfig" format=3 uid="uid://cdnfls0c7mck1"]
+
+[ext_resource type="Script" uid="uid://nqeh1dwrfxxr" path="res://scripts/config/WeaponConfig.cs" id="1_vn1ba"]
+
+[resource]
+script = ExtResource("1_vn1ba")
+Id = "2"
+DisplayName = "espingarda"
+Damage = 20.0
+Range = 500.0
+CriticalMultiplier = 1.2
+KnockbackForce = 100
+Type = 1
+Pattern = 2
+Effects = null
+metadata/_custom_type_script = "uid://nqeh1dwrfxxr"

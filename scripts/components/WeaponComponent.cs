@@ -9,7 +9,7 @@ public partial class WeaponComponent : Node
 
 	#region Exports
 
-	[Export] private WeaponConfig config;
+	[Export] public WeaponConfig config;
 	[Export] public ProjectileConfig ProjectileConfig;
 	#endregion
 

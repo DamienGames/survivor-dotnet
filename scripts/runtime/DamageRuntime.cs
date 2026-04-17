@@ -1,6 +1,6 @@
 using Godot;
 
-public partial class DamageContext : RefCounted
+public partial class DamageRuntime : RefCounted
 {
     public Node Source;
     public Node Target;
@@ -12,7 +12,7 @@ public partial class DamageContext : RefCounted
     public int KnockbackForce;
     public int PullForce;
 
-    public DamageContext(float amount, Node source = null, Node target = null)
+    public DamageRuntime(float amount, Node source = null, Node target = null)
     {
         BaseAmount = amount;
         FinalAmount = amount;

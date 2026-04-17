@@ -2,7 +2,7 @@ using Godot;
 using Godot.Collections;
 
 [GlobalClass]
-public abstract partial class WeaponConfig : Resource
+public partial class WeaponConfig : Resource
 {
 	#region Exports
 

@@ -2,14 +2,6 @@ using Godot;
 
 public partial class ProjectileComponent : Area2D
 {
-    #region Signals
-
-    #endregion
-
-    #region Exports
-
-    #endregion
-
     #region Properties
 
     private ProjectileConfig _config;
@@ -46,7 +38,7 @@ public partial class ProjectileComponent : Area2D
         if (body is not HurtboxComponent hurtbox || !hurtbox.CanBeHit())
             return;
 
-        var damageContext = new DamageContext(_config.Damage)
+        var damageContext = new DamageRuntime(_config.Damage)
         {
             Source = _source,
             Target = hurtbox,

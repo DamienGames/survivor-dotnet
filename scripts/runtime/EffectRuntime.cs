@@ -1,7 +1,7 @@
 using Godot;
 using static StatsComponent;
 
-public abstract partial class EffectInstance : RefCounted
+public abstract partial class EffectRuntime : RefCounted
 {
     protected Node _target;
     protected StatsComponent _stats;
@@ -27,8 +27,8 @@ public abstract partial class EffectInstance : RefCounted
         if (_timer <= 0)
             OnEnd();
     }
-    protected virtual void OnUpdate(double delta) 
-    { 
+    protected virtual void OnUpdate(double delta)
+    {
     }
 
     protected virtual void OnStart()

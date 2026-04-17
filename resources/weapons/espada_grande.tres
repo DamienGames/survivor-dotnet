@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="WeaponConfig" format=3 uid="uid://d001xs4fy262g"]
+
+[ext_resource type="Script" uid="uid://nqeh1dwrfxxr" path="res://scripts/config/WeaponConfig.cs" id="1_4ty57"]
+
+[resource]
+script = ExtResource("1_4ty57")
+Id = "1"
+DisplayName = "ESAPDA"
+Type = 2
+Pattern = 1
+Shape = 3
+Effects = null
+metadata/_custom_type_script = "uid://nqeh1dwrfxxr"

@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://cffmo1t2ycrd4" path="res://scripts/Main.cs" id="1_sugp2"]
 [ext_resource type="Texture2D" uid="uid://djca20lgmvjib" path="res://assets/bg-1.png" id="2_jyhfs"]
+[ext_resource type="PackedScene" uid="uid://d0gp1ems1ek85" path="res://scenes/player.tscn" id="3_sugp2"]
 
 [node name="Main" type="Node2D" unique_id=274366841]
 script = ExtResource("1_sugp2")
@@ -22,3 +23,6 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("2_jyhfs")
 expand_mode = 2
+
+[node name="Player" parent="." unique_id=719529687 instance=ExtResource("3_sugp2")]
+position = Vector2(561, 349)

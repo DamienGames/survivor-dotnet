@@ -4,7 +4,7 @@ public partial class HitboxComponent : Area2D
 {
     #region Signals
 
-    [Signal] public delegate void HitDetectedEventHandler(DamageContext damageContext);
+    [Signal] public delegate void HitDetectedEventHandler(DamageRuntime damageContext);
     #endregion
 
     #region Exports
@@ -32,7 +32,7 @@ public partial class HitboxComponent : Area2D
         if (body is not HurtboxComponent hurtbox || !hurtbox.CanBeHit())
             return;
 
-        var context = new DamageContext(damage)
+        var context = new DamageRuntime(damage)
         {
             Source = this,
             Target = hurtbox,

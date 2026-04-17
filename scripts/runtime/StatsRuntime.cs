@@ -1,6 +1,6 @@
 using Godot;
 
-public partial class StatsContext : RefCounted
+public partial class StatsRuntime : RefCounted
 {
     public float Damage;
     public float AttackSpeed;

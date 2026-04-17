@@ -30,7 +30,7 @@ public partial class HealthComponent : Node
         _stats = GetParent().GetNode<StatsComponent>("StatsComponent");
     }
 
-    public void TakeDamage(DamageContext damage)
+    public void TakeDamage(DamageRuntime damage)
     {
         if (_currentHealth <= 0)
             return;
@@ -55,6 +55,7 @@ public partial class HealthComponent : Node
             _currentHealth = maxHealth;
         EmitSignal(SignalName.HealthChanged, _currentHealth);
     }
+
     public void FullHeal()
     {
         if (_currentHealth != maxHealth)

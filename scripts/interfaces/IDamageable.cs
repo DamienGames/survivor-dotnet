@@ -1,4 +1,4 @@
 public interface IDamageable 
 {
-    void TakeDamage(DamageContext damage);
+    void TakeDamage(DamageRuntime damage);
 }

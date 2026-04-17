@@ -84,14 +84,14 @@ public partial class HurtboxComponent : Area2D, IDamageable
         return !_is_invincible && _health != null && !_health.Dead;
     }
 
-    public void TakeDamage(DamageContext damageContext)
+    public void TakeDamage(DamageRuntime damageContext)
     {
         _health.TakeDamage(damageContext);
         ShowDamageNumber(damageContext.FinalAmount);
         EmitSignal(SignalName.Hurt, damageContext.Source);
     }
 
-    private void OnHitDetected(DamageContext damageContext)
+    private void OnHitDetected(DamageRuntime damageContext)
     {
         if (!CanBeHit())
             return;

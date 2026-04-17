@@ -3,7 +3,12 @@ using System.Collections.Generic;
 
 public partial class EffectComponent : Node
 {
-    private List<EffectInstance> _effects = new();
+    #region Properties
+
+    private List<EffectRuntime> _effects = new();
+    #endregion
+
+    #region Métodos
 
     public void ApplyEffect(EffectConfig config, Node target)
     {
@@ -27,4 +32,6 @@ public partial class EffectComponent : Node
             // (você pode melhorar isso depois)
         }
     }
+    #endregion
+
 }
