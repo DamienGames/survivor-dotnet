@@ -41,6 +41,7 @@ public partial class WeaponConfig : Resource
 		Summon,
 		Area
 	}
+
 	public enum AttackPattern
 	{
 		Hit,            // linha (melee)
@@ -60,6 +61,7 @@ public partial class WeaponConfig : Resource
 		Repeat,          // repetição
 		Binary          // alternado
 	}
+
 	public enum AttackShape
 	{
 		Line,

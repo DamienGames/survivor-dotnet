@@ -1,18 +1,23 @@
 [gd_scene format=3 uid="uid://d0gp1ems1ek85"]
 
-[ext_resource type="Script" uid="uid://vi657itwhlt5" path="res://Player.cs" id="1_g2els"]
-[ext_resource type="Texture2D" uid="uid://bkcf87qtoqgpi" path="res://assets/icon.svg" id="2_qhqgy"]
+[ext_resource type="Texture2D" uid="uid://bkcf87qtoqgpi" path="res://assets/icon.svg" id="1_3vyb7"]
+[ext_resource type="Shader" uid="uid://cpa47mh2mvrhb" path="res://scenes/player.gdshader" id="1_dqkch"]
+[ext_resource type="Script" uid="uid://bcuqqw1vomvl1" path="res://scripts/Player.cs" id="1_g2els"]
+[ext_resource type="PackedScene" uid="uid://dpfbuwcpgk7a2" path="res://scenes/projectile.tscn" id="2_qhqgy"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_dqkch"]
-size = Vector2(125, 96)
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_dqkch"]
+shader = ExtResource("1_dqkch")
 
-[node name="Player" type="CharacterBody2D" unique_id=719529687]
-position = Vector2(-74, 10)
+[sub_resource type="CircleShape2D" id="CircleShape2D_g2els"]
+
+[node name="Player" type="CharacterBody2D" unique_id=1240413162 groups=["player"]]
+collision_mask = 2
 script = ExtResource("1_g2els")
+_projectileScene = ExtResource("2_qhqgy")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1007347359]
-texture = ExtResource("2_qhqgy")
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=986592659]
+material = SubResource("ShaderMaterial_dqkch")
+texture = ExtResource("1_3vyb7")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=482955293]
-position = Vector2(-2, 8)
-shape = SubResource("RectangleShape2D_dqkch")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=360473574]
+shape = SubResource("CircleShape2D_g2els")

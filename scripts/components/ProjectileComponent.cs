@@ -53,6 +53,4 @@ public partial class ProjectileComponent : Area2D
             QueueFree();
     }
     #endregion
-
-
 }
