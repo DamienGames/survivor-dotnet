@@ -3,40 +3,23 @@
   "WorkspaceRootPath": "C:\\_Projetos\\survivor-dotnet\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FEAB44FA-4067-44A3-A17F-6E7CE1180F5A}|SurvivorDotnet.csproj|c:\\_projetos\\survivor-dotnet\\scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FEAB44FA-4067-44A3-A17F-6E7CE1180F5A}|SurvivorDotnet.csproj|solutionrelative:scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\walds\\AppData\\Local\\Temp\\.vsdbgsrc\\d9d8e01208e3a6e2dbfb409adeeb32e1963ab6d0\\Godot.NativeInterop.NativeFuncs.generated.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FEAB44FA-4067-44A3-A17F-6E7CE1180F5A}|SurvivorDotnet.csproj|c:\\_projetos\\survivor-dotnet\\scripts\\projectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FEAB44FA-4067-44A3-A17F-6E7CE1180F5A}|SurvivorDotnet.csproj|solutionrelative:scripts\\projectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FEAB44FA-4067-44A3-A17F-6E7CE1180F5A}|SurvivorDotnet.csproj|c:\\_projetos\\survivor-dotnet\\scripts\\controller\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEAB44FA-4067-44A3-A17F-6E7CE1180F5A}|SurvivorDotnet.csproj|solutionrelative:scripts\\controller\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FEAB44FA-4067-44A3-A17F-6E7CE1180F5A}|SurvivorDotnet.csproj|c:\\_projetos\\survivor-dotnet\\scripts\\components\\projectilecomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FEAB44FA-4067-44A3-A17F-6E7CE1180F5A}|SurvivorDotnet.csproj|solutionrelative:scripts\\components\\projectilecomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FEAB44FA-4067-44A3-A17F-6E7CE1180F5A}|SurvivorDotnet.csproj|c:\\_projetos\\survivor-dotnet\\scripts\\spawners\\enemyspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEAB44FA-4067-44A3-A17F-6E7CE1180F5A}|SurvivorDotnet.csproj|solutionrelative:scripts\\spawners\\enemyspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FEAB44FA-4067-44A3-A17F-6E7CE1180F5A}|SurvivorDotnet.csproj|c:\\_projetos\\survivor-dotnet\\scripts\\components\\hitboxcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FEAB44FA-4067-44A3-A17F-6E7CE1180F5A}|SurvivorDotnet.csproj|solutionrelative:scripts\\components\\hitboxcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FEAB44FA-4067-44A3-A17F-6E7CE1180F5A}|SurvivorDotnet.csproj|c:\\_projetos\\survivor-dotnet\\scripts\\pool\\enemypool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEAB44FA-4067-44A3-A17F-6E7CE1180F5A}|SurvivorDotnet.csproj|solutionrelative:scripts\\pool\\enemypool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FEAB44FA-4067-44A3-A17F-6E7CE1180F5A}|SurvivorDotnet.csproj|c:\\_projetos\\survivor-dotnet\\scripts\\components\\weaponcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FEAB44FA-4067-44A3-A17F-6E7CE1180F5A}|SurvivorDotnet.csproj|solutionrelative:scripts\\components\\weaponcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FEAB44FA-4067-44A3-A17F-6E7CE1180F5A}|SurvivorDotnet.csproj|c:\\_projetos\\survivor-dotnet\\scripts\\config\\weaponconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FEAB44FA-4067-44A3-A17F-6E7CE1180F5A}|SurvivorDotnet.csproj|solutionrelative:scripts\\config\\weaponconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FEAB44FA-4067-44A3-A17F-6E7CE1180F5A}|SurvivorDotnet.csproj|c:\\_projetos\\survivor-dotnet\\scripts\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FEAB44FA-4067-44A3-A17F-6E7CE1180F5A}|SurvivorDotnet.csproj|solutionrelative:scripts\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FEAB44FA-4067-44A3-A17F-6E7CE1180F5A}|SurvivorDotnet.csproj|c:\\_projetos\\survivor-dotnet\\scripts\\components\\healthcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FEAB44FA-4067-44A3-A17F-6E7CE1180F5A}|SurvivorDotnet.csproj|solutionrelative:scripts\\components\\healthcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FEAB44FA-4067-44A3-A17F-6E7CE1180F5A}|SurvivorDotnet.csproj|c:\\_projetos\\survivor-dotnet\\scripts\\config\\effectconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FEAB44FA-4067-44A3-A17F-6E7CE1180F5A}|SurvivorDotnet.csproj|solutionrelative:scripts\\config\\effectconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FEAB44FA-4067-44A3-A17F-6E7CE1180F5A}|SurvivorDotnet.csproj|c:\\_projetos\\survivor-dotnet\\scripts\\controller\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEAB44FA-4067-44A3-A17F-6E7CE1180F5A}|SurvivorDotnet.csproj|solutionrelative:scripts\\controller\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,7 +29,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,117 +41,67 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "HitboxComponent.cs",
-              "DocumentMoniker": "C:\\_Projetos\\survivor-dotnet\\scripts\\components\\HitboxComponent.cs",
-              "RelativeDocumentMoniker": "scripts\\components\\HitboxComponent.cs",
-              "ToolTip": "C:\\_Projetos\\survivor-dotnet\\scripts\\components\\HitboxComponent.cs",
-              "RelativeToolTip": "scripts\\components\\HitboxComponent.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAAAAAA",
+              "DocumentIndex": 0,
+              "Title": "Godot.NativeInterop.NativeFuncs.generated.cs",
+              "DocumentMoniker": "C:\\Users\\walds\\AppData\\Local\\Temp\\.vsdbgsrc\\d9d8e01208e3a6e2dbfb409adeeb32e1963ab6d0\\Godot.NativeInterop.NativeFuncs.generated.cs",
+              "RelativeDocumentMoniker": "..\\..\\Users\\walds\\AppData\\Local\\Temp\\.vsdbgsrc\\d9d8e01208e3a6e2dbfb409adeeb32e1963ab6d0\\Godot.NativeInterop.NativeFuncs.generated.cs",
+              "ToolTip": "C:\\Users\\walds\\AppData\\Local\\Temp\\.vsdbgsrc\\d9d8e01208e3a6e2dbfb409adeeb32e1963ab6d0\\Godot.NativeInterop.NativeFuncs.generated.cs [Read Only]",
+              "RelativeToolTip": "..\\..\\Users\\walds\\AppData\\Local\\Temp\\.vsdbgsrc\\d9d8e01208e3a6e2dbfb409adeeb32e1963ab6d0\\Godot.NativeInterop.NativeFuncs.generated.cs [Read Only]",
+              "ViewState": "AQIAAFAAAAAAAAAAAADgv2AAAAA+AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-17T18:07:51.332Z",
+              "WhenOpened": "2026-04-19T18:43:01.439Z",
+              "EditorCaption": " [Read Only]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EnemyPool.cs",
+              "DocumentMoniker": "C:\\_Projetos\\survivor-dotnet\\scripts\\pool\\EnemyPool.cs",
+              "RelativeDocumentMoniker": "scripts\\pool\\EnemyPool.cs",
+              "ToolTip": "C:\\_Projetos\\survivor-dotnet\\scripts\\pool\\EnemyPool.cs",
+              "RelativeToolTip": "scripts\\pool\\EnemyPool.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-19T18:37:51.048Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ProjectileComponent.cs",
-              "DocumentMoniker": "C:\\_Projetos\\survivor-dotnet\\scripts\\components\\ProjectileComponent.cs",
-              "RelativeDocumentMoniker": "scripts\\components\\ProjectileComponent.cs",
-              "ToolTip": "C:\\_Projetos\\survivor-dotnet\\scripts\\components\\ProjectileComponent.cs",
-              "RelativeToolTip": "scripts\\components\\ProjectileComponent.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAowDQAAAAAAAAA",
+              "Title": "EnemySpawner.cs",
+              "DocumentMoniker": "C:\\_Projetos\\survivor-dotnet\\scripts\\spawners\\EnemySpawner.cs",
+              "RelativeDocumentMoniker": "scripts\\spawners\\EnemySpawner.cs",
+              "ToolTip": "C:\\_Projetos\\survivor-dotnet\\scripts\\spawners\\EnemySpawner.cs",
+              "RelativeToolTip": "scripts\\spawners\\EnemySpawner.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAowCMAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-17T18:04:41.514Z",
+              "WhenOpened": "2026-04-19T18:37:40.566Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Projectile.cs",
-              "DocumentMoniker": "C:\\_Projetos\\survivor-dotnet\\scripts\\Projectile.cs",
-              "RelativeDocumentMoniker": "scripts\\Projectile.cs",
-              "ToolTip": "C:\\_Projetos\\survivor-dotnet\\scripts\\Projectile.cs",
-              "RelativeToolTip": "scripts\\Projectile.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAQwCEAAAAAAAAA",
+              "Title": "Enemy.cs",
+              "DocumentMoniker": "C:\\_Projetos\\survivor-dotnet\\scripts\\controller\\Enemy.cs",
+              "RelativeDocumentMoniker": "scripts\\controller\\Enemy.cs",
+              "ToolTip": "C:\\_Projetos\\survivor-dotnet\\scripts\\controller\\Enemy.cs",
+              "RelativeToolTip": "scripts\\controller\\Enemy.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAQwB8AAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-17T18:01:59.988Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Main.cs",
-              "DocumentMoniker": "C:\\_Projetos\\survivor-dotnet\\scripts\\Main.cs",
-              "RelativeDocumentMoniker": "scripts\\Main.cs",
-              "ToolTip": "C:\\_Projetos\\survivor-dotnet\\scripts\\Main.cs",
-              "RelativeToolTip": "scripts\\Main.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-17T17:41:25.753Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Player.cs",
-              "DocumentMoniker": "C:\\_Projetos\\survivor-dotnet\\scripts\\Player.cs",
-              "RelativeDocumentMoniker": "scripts\\Player.cs",
-              "ToolTip": "C:\\_Projetos\\survivor-dotnet\\scripts\\Player.cs",
-              "RelativeToolTip": "scripts\\Player.cs",
-              "ViewState": "AQIAAB8AAAAAAAAAAAAgwCoAAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-17T17:35:04.525Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "HealthComponent.cs",
-              "DocumentMoniker": "C:\\_Projetos\\survivor-dotnet\\scripts\\components\\HealthComponent.cs",
-              "RelativeDocumentMoniker": "scripts\\components\\HealthComponent.cs",
-              "ToolTip": "C:\\_Projetos\\survivor-dotnet\\scripts\\components\\HealthComponent.cs",
-              "RelativeToolTip": "scripts\\components\\HealthComponent.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-17T17:35:04.188Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "EffectConfig.cs",
-              "DocumentMoniker": "C:\\_Projetos\\survivor-dotnet\\scripts\\config\\EffectConfig.cs",
-              "RelativeDocumentMoniker": "scripts\\config\\EffectConfig.cs",
-              "ToolTip": "C:\\_Projetos\\survivor-dotnet\\scripts\\config\\EffectConfig.cs",
-              "RelativeToolTip": "scripts\\config\\EffectConfig.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAxwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-17T17:35:04.213Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "WeaponConfig.cs",
-              "DocumentMoniker": "C:\\_Projetos\\survivor-dotnet\\scripts\\config\\WeaponConfig.cs",
-              "RelativeDocumentMoniker": "scripts\\config\\WeaponConfig.cs",
-              "ToolTip": "C:\\_Projetos\\survivor-dotnet\\scripts\\config\\WeaponConfig.cs",
-              "RelativeToolTip": "scripts\\config\\WeaponConfig.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-17T17:35:04.216Z",
+              "WhenOpened": "2026-04-19T18:37:23.558Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "WeaponComponent.cs",
-              "DocumentMoniker": "C:\\_Projetos\\survivor-dotnet\\scripts\\components\\WeaponComponent.cs",
-              "RelativeDocumentMoniker": "scripts\\components\\WeaponComponent.cs",
-              "ToolTip": "C:\\_Projetos\\survivor-dotnet\\scripts\\components\\WeaponComponent.cs",
-              "RelativeToolTip": "scripts\\components\\WeaponComponent.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAQwB4AAAACAAAA",
+              "Title": "Player.cs",
+              "DocumentMoniker": "C:\\_Projetos\\survivor-dotnet\\scripts\\controller\\Player.cs",
+              "RelativeDocumentMoniker": "scripts\\controller\\Player.cs",
+              "ToolTip": "C:\\_Projetos\\survivor-dotnet\\scripts\\controller\\Player.cs",
+              "RelativeToolTip": "scripts\\controller\\Player.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-17T17:35:04.218Z",
+              "WhenOpened": "2026-04-19T18:36:57.141Z",
               "EditorCaption": ""
             }
           ]

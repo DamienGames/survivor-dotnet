@@ -5,7 +5,7 @@ using Godot;
 using static System.Net.Mime.MediaTypeNames;
 using static HitboxComponent;
 
-public partial class HurtboxComponent : Area2D, IDamageable
+public partial class HurtboxComponent : Area2D
 {
     #region Signals
 

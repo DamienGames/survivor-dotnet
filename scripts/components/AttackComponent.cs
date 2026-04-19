@@ -61,9 +61,7 @@ public partial class AttackComponent : Node
             case WeaponConfig.AttackPattern.Trap:
             case WeaponConfig.AttackPattern.Dash:
             case WeaponConfig.AttackPattern.Repeat:
-            case WeaponConfig.AttackPattern.Binary:
-                GD.Print($"Pattern ainda não implementado: {Config.Pattern}");
-                break;
+            case WeaponConfig.AttackPattern.Binary:              
             default:
                 GD.PrintErr($"Pattern desconhecido: {Config.Pattern}");
                 break;

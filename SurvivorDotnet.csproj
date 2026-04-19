@@ -5,7 +5,7 @@
 	 
 	  <StartAction>Program</StartAction>
 	  <StartProgram>C:\Apps\Godot_v4.6.1-stable_mono_win64\Godot_v4.6.1-stable_mono_win64.exe</StartProgram>
-	  <StartArguments>--path "C:\Apps\Projetos\CSharp\SurvivorDotnet"</StartArguments>
+	  <StartArguments>--path "C:\_Projetos\survivor-dotnet"</StartArguments>
 
 	  <EnableDynamicLoading>true</EnableDynamicLoading>
   </PropertyGroup>

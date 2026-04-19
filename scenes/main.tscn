@@ -1,14 +1,41 @@
 [gd_scene format=3 uid="uid://ca1qpeclidxi2"]
 
 [ext_resource type="Script" uid="uid://cffmo1t2ycrd4" path="res://scripts/Main.cs" id="1_sugp2"]
-[ext_resource type="PackedScene" uid="uid://ckfagn80o5c78" path="res://scenes/enemy.tscn" id="3_jyhfs"]
-[ext_resource type="PackedScene" uid="uid://d0gp1ems1ek85" path="res://scenes/player.tscn" id="3_sugp2"]
+[ext_resource type="PackedScene" uid="uid://dhekapr0vdirh" path="res://scenes/enemy.tscn" id="3_jyhfs"]
+[ext_resource type="Script" uid="uid://dihtjmuj63u3g" path="res://scripts/spawners/EnemySpawner.cs" id="4_tbgi4"]
+[ext_resource type="Script" uid="uid://byjr842pjvnlr" path="res://scripts/pool/EnemyPool.cs" id="5_tefeu"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_tbgi4"]
+font_size = 32
+font_color = Color(1, 1, 0.2784314, 1)
 
 [node name="Main" type="Node2D" unique_id=1222570221]
 script = ExtResource("1_sugp2")
 
-[node name="Player" parent="." unique_id=1240413162 instance=ExtResource("3_sugp2")]
-position = Vector2(325, 577)
+[node name="EnemyPool" type="Node" parent="." unique_id=264424980]
+script = ExtResource("5_tefeu")
+EnemyScene = ExtResource("3_jyhfs")
 
-[node name="Enemy" parent="." unique_id=1486639455 instance=ExtResource("3_jyhfs")]
-position = Vector2(1084, 385)
+[node name="EnemySpawner" type="Node" parent="." unique_id=969173942 node_paths=PackedStringArray("_listaMarkers")]
+script = ExtResource("4_tbgi4")
+_listaMarkers = [NodePath("Marker2D"), NodePath("Marker2D2"), NodePath("Marker2D3")]
+IsActive = true
+
+[node name="Marker2D" type="Marker2D" parent="EnemySpawner" unique_id=199226]
+position = Vector2(90, 686)
+
+[node name="Marker2D2" type="Marker2D" parent="EnemySpawner" unique_id=2145979629]
+position = Vector2(1204, 406)
+
+[node name="Marker2D3" type="Marker2D" parent="EnemySpawner" unique_id=168254057]
+position = Vector2(86, 20)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=172499638]
+
+[node name="FPS" type="Label" parent="CanvasLayer" unique_id=1231182842]
+offset_left = 467.0
+offset_top = 263.0
+offset_right = 545.0
+offset_bottom = 308.0
+text = "teste"
+label_settings = SubResource("LabelSettings_tbgi4")

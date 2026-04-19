@@ -1,18 +1,31 @@
-[gd_scene format=3 uid="uid://ckfagn80o5c78"]
+[gd_scene format=3 uid="uid://dhekapr0vdirh"]
 
 [ext_resource type="Texture2D" uid="uid://bkcf87qtoqgpi" path="res://assets/icon.svg" id="1_7p1mj"]
+[ext_resource type="Script" uid="uid://f1x8fwq1qv4v" path="res://scripts/controller/Enemy.cs" id="1_md0e3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_md0e3"]
 size = Vector2(131, 138.5)
 
-[node name="Enemy" type="CharacterBody2D" unique_id=508908082]
+[sub_resource type="CircleShape2D" id="CircleShape2D_md0e3"]
+radius = 89.050545
+
+[node name="Enemy" type="StaticBody2D" unique_id=88326053]
 collision_layer = 2
-collision_mask = 5
+collision_mask = 3
+script = ExtResource("1_md0e3")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1857052853]
+modulate = Color(1, 0.61960787, 0.08627451, 1)
+texture = ExtResource("1_7p1mj")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=724160594 groups=["enemy"]]
 position = Vector2(1, -1)
 shape = SubResource("RectangleShape2D_md0e3")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1857052853]
-modulate = Color(1, 0.61960787, 0.08627451, 1)
-texture = ExtResource("1_7p1mj")
+[node name="Hurtbox" type="Area2D" parent="." unique_id=1233804656]
+collision_layer = 8
+collision_mask = 5
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hurtbox" unique_id=986396038]
+shape = SubResource("CircleShape2D_md0e3")
+debug_color = Color(0.9259941, 0.17049298, 0.5335606, 0.41960785)
