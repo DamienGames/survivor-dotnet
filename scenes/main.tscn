@@ -1,41 +1,42 @@
 [gd_scene format=3 uid="uid://ca1qpeclidxi2"]
 
 [ext_resource type="Script" uid="uid://cffmo1t2ycrd4" path="res://scripts/Main.cs" id="1_sugp2"]
-[ext_resource type="PackedScene" uid="uid://dhekapr0vdirh" path="res://scenes/enemy.tscn" id="3_jyhfs"]
+[ext_resource type="Script" uid="uid://f1x8fwq1qv4v" path="res://scripts/controller/Enemy.cs" id="3_tbgi4"]
 [ext_resource type="Script" uid="uid://dihtjmuj63u3g" path="res://scripts/spawners/EnemySpawner.cs" id="4_tbgi4"]
+[ext_resource type="Texture2D" uid="uid://bkcf87qtoqgpi" path="res://assets/icon.svg" id="4_tefeu"]
 [ext_resource type="Script" uid="uid://byjr842pjvnlr" path="res://scripts/pool/EnemyPool.cs" id="5_tefeu"]
 
-[sub_resource type="LabelSettings" id="LabelSettings_tbgi4"]
-font_size = 32
-font_color = Color(1, 1, 0.2784314, 1)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_md0e3"]
+size = Vector2(131, 138.5)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_md0e3"]
+radius = 89.050545
+
+[sub_resource type="PackedScene" id="PackedScene_o6xl0"]
+_bundled = {
+"conn_count": 0,
+"conns": PackedInt32Array(),
+"editable_instances": [],
+"id_paths": [PackedInt32Array(), PackedInt32Array(), PackedInt32Array(), PackedInt32Array()],
+"names": PackedStringArray("Enemy", "StaticBody2D", "collision_layer", "collision_mask", "script", "Sprite2D", "Sprite2D", "modulate", "texture", "CollisionShape2D", "CollisionShape2D", "enemy", "position", "shape", "Hurtbox", "Area2D", "collision_layer", "collision_mask", "CollisionShape2D", "CollisionShape2D", "shape", "debug_color"),
+"node_count": 5,
+"node_ids": PackedInt32Array(88326053, 1857052853, 724160594, 1233804656, 986396038),
+"node_paths": [NodePath("."), NodePath("."), NodePath("."), NodePath("./Hurtbox")],
+"nodes": PackedInt32Array(-1, -1, 1, 0, -1, 3, 2, 0, 3, 1, 4, 2, 0, 1073741824, 0, 6, 5, -1, 2, 7, 3, 8, 4, 0, 1073741825, 0, 10, 9, -1, 2, 12, 5, 13, 6, 1, 11, 1073741826, 0, 15, 14, -1, 2, 16, 7, 17, 8, 0, 1073741827, 0, 19, 18, -1, 2, 20, 9, 21, 10, 0),
+"variants": [2, 3, ExtResource("3_tbgi4"), Color(1, 0.61960787, 0.08627451, 1), ExtResource("4_tefeu"), Vector2(1, -1), SubResource("RectangleShape2D_md0e3"), 8, 5, SubResource("CircleShape2D_md0e3"), Color(0.9259941, 0.17049298, 0.5335606, 0.41960785)],
+"version": 3
+}
 
 [node name="Main" type="Node2D" unique_id=1222570221]
 script = ExtResource("1_sugp2")
 
 [node name="EnemyPool" type="Node" parent="." unique_id=264424980]
 script = ExtResource("5_tefeu")
-EnemyScene = ExtResource("3_jyhfs")
+EnemyScene = SubResource("PackedScene_o6xl0")
 
 [node name="EnemySpawner" type="Node" parent="." unique_id=969173942 node_paths=PackedStringArray("_listaMarkers")]
 script = ExtResource("4_tbgi4")
-_listaMarkers = [NodePath("Marker2D"), NodePath("Marker2D2"), NodePath("Marker2D3")]
+_listaMarkers = [NodePath(""), NodePath(""), NodePath("")]
 IsActive = true
 
-[node name="Marker2D" type="Marker2D" parent="EnemySpawner" unique_id=199226]
-position = Vector2(90, 686)
-
-[node name="Marker2D2" type="Marker2D" parent="EnemySpawner" unique_id=2145979629]
-position = Vector2(1204, 406)
-
-[node name="Marker2D3" type="Marker2D" parent="EnemySpawner" unique_id=168254057]
-position = Vector2(86, 20)
-
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=172499638]
-
-[node name="FPS" type="Label" parent="CanvasLayer" unique_id=1231182842]
-offset_left = 467.0
-offset_top = 263.0
-offset_right = 545.0
-offset_bottom = 308.0
-text = "teste"
-label_settings = SubResource("LabelSettings_tbgi4")

@@ -1,5 +1,3 @@
-using System;
-using System.Reflection.Metadata;
 using Godot;
 using Godot.Collections;
 
@@ -15,9 +13,9 @@ public partial class EnemySpawner : Node
         _enemyPool = GetParent().GetNode<EnemyPool>("EnemyPool");   
     }
 
-    public void SpawnEnemies(int ammount)
+    public void SpawnEnemies(int amount)
     {
-        var enemies = _enemyPool.GetEnemies(ammount);
+        var enemies = _enemyPool.GetEnemies(amount);
         if (IsActive)
         {
             foreach (var enemy in enemies)

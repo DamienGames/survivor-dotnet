@@ -1,6 +1,6 @@
 using Godot;
-using static StatsComponent;
 
+using static StatsComponent;
 public abstract partial class EffectRuntime : RefCounted
 {
     protected Node _target;

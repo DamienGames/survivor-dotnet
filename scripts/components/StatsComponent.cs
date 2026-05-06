@@ -69,7 +69,7 @@ public partial class StatsComponent : Node
 
     #endregion
 
-public enum StatType
+    public enum StatType
     {
         Damage,
         Defense,

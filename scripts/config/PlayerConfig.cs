@@ -1,5 +1,6 @@
 using Godot;
 
+[GlobalClass]
 public partial class PlayerConfig : Resource
 {
     #region Exports
@@ -10,20 +11,19 @@ public partial class PlayerConfig : Resource
 
 
     [ExportGroup("Behavior")]
-    [Export] float MaxHealth;
-    [Export] float Damage;
-    [Export] float MovingSpeed;
-    [Export] float CriticalChange;
-    [Export] float CriticalMultiplier;
-    [Export] float Evasion;
-    [Export] int Level;
+    [Export] public float MaxHealth;
+    [Export] public float MovingSpeed;
+    [Export] public float JumpForce;
+    [Export] public float Evasion;
+    [Export] public int Level;
 
-    [Export] EnemyType Type;
-    [Export] EnemyHostility Hostility;
+    [Export] public EnemyType Type;
+    [Export] public EnemyHostility Hostility;
 
     [ExportGroup("Visual")]
     [Export] public Texture2D DisplayIcon;
-    [Export] public PackedScene EnemyScene;
+    [Export] public PackedScene PlayerScene;
+    [Export] public PackedScene StartingWeapon;
     #endregion
 
     #region Enums

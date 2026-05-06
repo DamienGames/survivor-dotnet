@@ -10,7 +10,6 @@ public partial class AttackComponent : Node
 
     [Export] public WeaponConfig Config;
     [Export] public Node2D Owner;
-
     [Export] public ProjectileSpawner ProjectileSpawner;
     [Export] public MeleeAttack Melee;
     [Export] public AreaAttack Area;

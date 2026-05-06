@@ -10,7 +10,7 @@ public partial class EnemyPool : Node
 
     public int SetPool(int PoolSize)
     {
-        int ammount = 0;
+        int amount = 0;
         if (PoolSize + _pool.Count <= MaxPoolSize)
         {
             for (int i = 0; i < PoolSize; i++)
@@ -21,10 +21,10 @@ public partial class EnemyPool : Node
                 enemy.Visible = false;
                 enemy.ProcessMode = ProcessModeEnum.Disabled;
                 _pool.Add(enemy);
-                ammount++;
+                amount++;
             }
         }
-        return ammount;
+        return amount;
     }
 
     public Enemy GetEnemy()
@@ -39,9 +39,9 @@ public partial class EnemyPool : Node
         return null;
     }
 
-    public Array<Enemy> GetEnemies(int ammount)
+    public Array<Enemy> GetEnemies(int amount)
     {
-        SetPool(ammount);
+        SetPool(amount);
 
         Array<Enemy> enemies = new();
         foreach (var enemy in _pool)

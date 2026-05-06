@@ -32,7 +32,7 @@ public partial class HitboxComponent : Area2D
         if (body is not HurtboxComponent hurtbox || !hurtbox.CanBeHit())
             return;
 
-        var context = new DamageRuntime(damage)
+        var damageRuntime = new DamageRuntime(damage)
         {
             Source = this,
             Target = hurtbox,
@@ -40,7 +40,7 @@ public partial class HitboxComponent : Area2D
             PullForce = pull_force
         };
 
-        EmitSignal(SignalName.HitDetected, context);
+        EmitSignal(SignalName.HitDetected, damageRuntime);
     }
     #endregion
 }

@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://dhekapr0vdirh"]
+[gd_scene format=3 uid="uid://ckfagn80o5c78"]
 
 [ext_resource type="Texture2D" uid="uid://bkcf87qtoqgpi" path="res://assets/icon.svg" id="1_7p1mj"]
 [ext_resource type="Script" uid="uid://f1x8fwq1qv4v" path="res://scripts/controller/Enemy.cs" id="1_md0e3"]
